@@ -1,0 +1,343 @@
+body {
+	background-image: url("img/blue1.jpg");
+  background-repeat:repeat;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input{
+    cursor: pointer;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #292929;
+}
+
+.row{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.col{
+    height: 300px;    
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.display{
+    box-shadow: 0 0 0 35px #353535,0 0 0 45px #3e3e3e, inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    width: 100%;
+}
+
+.calculator{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.cal-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    margin: 10px;
+}
+
+#textview{
+    width: 150px;
+    height: 30px;
+    display: block;
+    margin: auto;
+     position: absolute;top: -82px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    color: #fff;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    margin: 5px;   
+}
+
+.equal{
+    width: 70px;
+}
+
+.massege{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+     transform: translateX(-50%);
+}
+
+.massege p{
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    margin: 10px;
+}
+
+#msg2{
+    color: green;
+}
+
+.menu{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    display: none;
+}
+
+.menu input{
+    width: 70px;
+    height: 30px;
+    padding: 3px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #050801; 
+    background-color: transparent;
+    color: #fff;    
+}
+
+.menu input:hover
+{
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    outline: none;
+    border: none;
+}
+
+#menuback
+{
+    width: 70px;
+    height: 30px;
+    padding: 3px;
+    margin: 5px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    text-align: center;
+    border: 1px solid #050801; 
+    background-color: crimson;
+    color: #fff;
+  border-bottom-left-radius: 30px;
+     display: none;
+        
+    
+}
+#menuback:hover{
+    font-weight: 400;
+            color: #050801;
+            box-shadow: 0 0 5px crimson,
+                0 0 25px crimson,
+                0 0 50px crimson,
+                0 0 200px crimson;
+    outline: none;
+    border: none;
+}
+#mini-st{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: none;
+}
+#msg3{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#captcha{
+    width: 31px;
+    height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 130px;
+    right: 29%;
+   background-color: #3e3e3e;
+    outline: none
+    border: none;
+    display: none;
+    text-align: center;
+    line-height: 18px;    
+}
+
+#captcha:hover{
+     box-shadow: 0 0 5px #3e3e3e, 0 0 25px white, 0 0 50px #3e3e3e, 0 0 200px #3e3e3e;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-bank {
+  width: 1.0712890625em;
+}
+
+.table {	
+font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 700px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+ 
+.accordion {
+  background-color:transparent;
+  color: black;
+  cursor: pointer;
+  padding: 20 40px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color:lightseagreen; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:black;
+  overflow: hidden;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:lightgreen;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  box-shadow: 0 0 5px lightpink,
+                0 0 25px lightpink,
+                0 0 50px lightpink,
+                0 0 200px lightpink;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+  width: 1365px;
+  height: 400px; /* only for demonstration, should be removed */
+  background:lightslategrey;
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  box-shadow: 0 0 5px lightgreen,
+                0 0 25px  lightgreen,
+                0 0 50px  lightgreen,
+                0 0 200px  lightgreen;
+  background-color:burlywood;
+  padding: 60px;
+  text-align: center;
+  font-size: 30px;
+  color:black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Atms</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+	<header>
+  <h3>ATM NAMES</h3>
+</header>
+	<center>
+	<section>
+	<nav>
+		<table>  
+			<tr>
+				<th>
+					<div class="left">
+						<a href="file:///E:/Front%20end/Project/src/atm.html">
+							<button class="accordion"><i class="fas fa-university">&#xf19c;</i>&nbsp;&nbsp;&nbsp;&nbsp;BANK OF BARODA</button>
+						 </a>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<a href="file:///E:/Front%20end/Project/src/Atm2.html">
+						<i class='fas fa-university'></i>
+						<button class="accordion" ><i class="fas fa-university">&#xf19c;</i>&nbsp;&nbsp;&nbsp;&nbsp;BANK OF INDIA</button>
+					</a>
+				</th>
+			</tr>
+				
+			<tr>
+				<th>
+					<a href="file:///E:/Front%20end/Project/src/Atm3.html">
+						<button class="accordion"><i class="fas fa-university">&#xf19c;</i>&nbsp;&nbsp;&nbsp;&nbsp;CORPORATION BANK</button>
+					</a>
+				</th>
+			</tr>
+			
+			<tr>
+				<th>
+					<a href="file:///E:/Front%20end/Project/src/Atm4.html">
+						<button class="accordion"><i class="material-icons">&#xf19c;</i>&nbsp;&nbsp;&nbsp;&nbsp;CENTRAL BANK OF INDIA</button>
+					</a>
+					</th>
+			</tr>				
+		</table>
+</nav>
+</section>	
+</center>			
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+		for (i = 0; i < acc.length; i++) 
+		{
+			acc[i].addEventListener("click", function()
+			 {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") 
+				{
+					panel.style.display = "none";
+				} 
+				else
+				{
+					panel.style.display = "block";
+				}
+  			});
+		}
+</script>
+<footer>
+ 
+</footer>
+</body>
