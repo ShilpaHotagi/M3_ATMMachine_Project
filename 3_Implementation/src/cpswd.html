@@ -1,0 +1,29 @@
+<form class="pure-form">
+    <fieldset>
+        <center> 
+        <legend><h1>Change Password</h1></legend><br><br> 
+ 
+        <label for="usrname">Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+        <input type="password" placeholder="Password" id="password" required><br><br><br><br>
+
+        <label for="usrname">Change Password :</label>
+        <input type="password" placeholder="Confirm Password" id="confirm_password" required><br><br><br><br>
+
+        <button type="submit" class="pure-button pure-button-primary">Confirm</button>
+    </center>
+    </fieldset>
+    <script> var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+</form>

@@ -12,7 +12,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+   
   color: white;
   padding: 14px 200px;
   margin: 8px 0;
@@ -178,39 +178,7 @@ input[type=submit] {
   content: "✖";
 }
 
-header {
-  background-color:rgb(191, 142, 212);
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-  box-shadow: 0 0 5px lightpink,
-                0 0 25px lightpink,
-                0 0 50px lightpink,
-                0 0 200px lightpink;
-}
-
-nav {
-  float: left;
-  box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-  width: 1250px;
-  height: 400px; /* only for demonstration, should be removed */
-  background:burlywood;
-  padding: 50px;
-}
-
-
-footer {
-  box-shadow: 0 0 5px lightgreen,
-                0 0 25px  lightgreen,
-                0 0 50px  lightgreen,
-                0 0 200px  lightgreen;
-  background-color:rgb(191, 142, 212);
-  padding: 50px;
-  text-align: center;
-  font-size: 30px;
-  color:black;
-}
+@media screen and (max-width: 100px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }

@@ -1,343 +1,185 @@
-body {
-	background-image: url("img/blue1.jpg");
-  background-repeat:repeat;
+.float-rt{float:right;}
+.float-lt{float:left;}
+.clear{clear:both;}
+.pos-relative{
+	position:relative;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.pos-absolute{
+	position:absolute;
 }
 
-input{
-    cursor: pointer;
+img{
+	max-width:100%;
+	max-height:480px;
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: #292929;
+body{
+	background:#F8FBFB;
 }
 
-.row{
-    width: 400px;
-    height: 600px;
-    margin: auto;
-     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.wrap{
+	width:70%;
+	margin:0 auto;
 }
 
-.col{
-    height: 300px;    
-    padding: 20px;
-    text-align: center;
-    position: relative;
+header{
+	background:url(image/header-bg.png);
 }
 
-.display{
-    box-shadow: 0 0 0 35px #353535,0 0 0 45px #3e3e3e, inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
-    width: 100%;
+.logo{
+	float:left;
+	margin-top: 1px;
+	font-size:18px;
 }
 
-.calculator{
-    width: 80%;
-    display: block;
-    margin: auto;
+.top-nav{
+	float:right;
 }
 
-.cal-logo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 40px;
-    color: #fff;
-    text-shadow: 1px 1px 1px black;
-    margin: 10px;
+.top-nav ul li{
+	display:inline-block;
+	float:left;
+	border-left: 1px solid rgb(31, 132, 224);
 }
 
-#textview{
-    width: 150px;
-    height: 30px;
-    display: block;
-    margin: auto;
-     position: absolute;top: -82px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    background: transparent;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 2px solid black;
-    color: #fff;
+.top-nav ul li:first-child{
+	border-left:none;
+}
+.top-nav ul li a{
+	font-family: 'Ropa Sans', sans-serif;
+	background:#3391E7;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 16px;
+	display: block;
 }
 
-.btn{
-    width: 50px;
-    height: 50px;
-    margin: 5px;   
+.top-nav li.active> a, .top-nav li> a:hover {
+	background: rgb(50, 133, 209);
+	border-left-color:rgb(50, 133, 209);
 }
 
-.equal{
-    width: 70px;
+.content-grids{
+	background:#3391E7;
+	padding: 5px 0px;
 }
 
-.massege{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-     transform: translateX(-50%);
+.section {
+	clear: both;
+	padding: 0px;
+	margin: -1px;
+	text-align: center;
 }
 
-.massege p{
-    font-size: 22px;
-    color: #fff;
-    text-shadow: 1px 1px 1px black;
-    margin: 10px;
+.group:before,
+.group:after {
+    content:"";
+    display:table;
 }
 
-#msg2{
-    color: green;
+.group:after {
+    clear:both;
 }
 
-.menu{
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    display: none;
+.group {
+    zoom:1;
 }
 
-.menu input{
-    width: 70px;
-    height: 30px;
-    padding: 3px;
-    margin: 5px;
-    text-align: center;
-    border: 1px solid #050801; 
-    background-color: transparent;
-    color: #fff;    
+.listview_1_of_3{
+	display: block;
+	float:left;
+	margin: 0% 0 0% 1.6%;
+	background: #F1F6F9;
 }
 
-.menu input:hover
-{
-    background-color: #03e9f4;
-    color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-    outline: none;
-    border: none;
+.text{
+	display: block;
+	float:left;
+	margin: 0% 0 0% 3.6%;
 }
 
-#menuback
-{
-    width: 70px;
-    height: 30px;
-    padding: 3px;
-    margin: 5px;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    text-align: center;
-    border: 1px solid #050801; 
-    background-color: crimson;
-    color: #fff;
-  border-bottom-left-radius: 30px;
-     display: none;
-        
-    
-}
-#menuback:hover{
-    font-weight: 400;
-            color: #050801;
-            box-shadow: 0 0 5px crimson,
-                0 0 25px crimson,
-                0 0 50px crimson,
-                0 0 200px crimson;
-    outline: none;
-    border: none;
-}
-#mini-st{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    display: none;
-}
-#msg3{
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translateX(-50%);
+.listview_1_of_3:first-child
+{ 
+	 margin-left: 0; 	
 }
 
-#captcha{
-    width: 31px;
-    height: 22px;
-    font-size: 18px;
+.images_1_of_3 {
+	width: 29.2%;
+	padding:1.5%;
+	border-radius: 1.1em;
+}
+
+.list_1_of_2 {
+	width: 64.2%;
+	margin-top: 1px;
+}
+
+.images_1_of_3  img {
+	max-width:100%;
+	display:block;
+}
+
+.images_1_of_3  a{
+text-decoration: none;
+}
+
+.list_1_of_2  h3{
+	color:#3391E7;
+	margin-bottom:0.0em;
+	margin-top:0;
+	font-size: 20px;
+	font-family: 'Ropa Sans', sans-serif;
+	font-weight : normal;
+	letter-spacing: -1px;
+}
+
+/*login page style*/
+
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+}
+
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.login-form h2 {
+    margin: 0 0 15px;
+}
+
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+
+.btn {
+    font-size: 15px;
     font-weight: bold;
-    color: #fff;
-    position: absolute;
-    top: 130px;
-    right: 29%;
-   background-color: #3e3e3e;
-    outline: none
-    border: none;
-    display: none;
-    text-align: center;
-    line-height: 18px;    
 }
 
-#captcha:hover{
-     box-shadow: 0 0 5px #3e3e3e, 0 0 25px white, 0 0 50px #3e3e3e, 0 0 200px #3e3e3e;
+/*adminhome page*/
+
+.accordion-flush{
+	position: absolute;
+    left: auto;
+    width: 250px;
+    height: 600px;
+    border: 3px solid rgb(210, 210, 211);
+    background-color: rgb(215, 218, 215);
 }
 
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-.icon-bank {
-  width: 1.0712890625em;
-}
-
-.table {	
-font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 700px;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
- 
-.accordion {
-  background-color:transparent;
-  color: black;
-  cursor: pointer;
-  padding: 20 40px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color:lightseagreen; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color:black;
-  overflow: hidden;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color:lightgreen;
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-  box-shadow: 0 0 5px lightpink,
-                0 0 25px lightpink,
-                0 0 50px lightpink,
-                0 0 200px lightpink;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-  width: 1365px;
-  height: 400px; /* only for demonstration, should be removed */
-  background:lightslategrey;
-  padding: 50px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  box-shadow: 0 0 5px lightgreen,
-                0 0 25px  lightgreen,
-                0 0 50px  lightgreen,
-                0 0 200px  lightgreen;
-  background-color:burlywood;
-  padding: 60px;
-  text-align: center;
-  font-size: 30px;
-  color:black;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+.footer {
+   position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #0C0300;
+   color: white;
+   text-align: center;
 }
