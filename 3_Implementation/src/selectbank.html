@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -14,20 +14,37 @@
     <script type="text/javascript" src="js/hcm.js"></script>
     <link href="css/adminstyle.css" rel="stylesheet" type="text/css"  media="all" />
 
+     
+		<link href="http://fonts.googleapis.com/css?family=Ropa+Sans" rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/responsiveslides.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		 
+		  <script>
+			    $(function () {
+			      // Slideshow 1
+			      $("#slider1").responsiveSlides({
+			        maxwidth: 1000,
+              float:right,
+			        speed: 600
+              
+			      });
+			});
+		  </script>
 
     <title>SelectATM</title>
   </head>
 
  <body>
 
-<nav class="navbar navbar-light" style="background-color: #92acd4;">
+<nav class="navbar navbar-light" style="background-color: #b38fdd;">
   <a class="navbar-brand" href="#">
     <img src="img/logo.png" width="80" height="60" class="d-inline-block align-top" alt=""></a>
-   <p class="h1">ATM Machines</p>
+   <p class="h1"><b>ATM Machines</b></p>
 
 <div class="w3-container">
 <div class="w3-dropdown-hover">
-    <button class="w3-button w3-black">Admin</button>
+    <button class="w3-button w3-black">User</button>
     <div class="w3-dropdown-content w3-bar-block w3-border">
       <a href="home.html" class="w3-bar-item w3-button"> Log Out</a>
       <a href="cpswd.html" class="w3-bar-item w3-button">Change password</a
@@ -41,7 +58,7 @@
 <span style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776; ATMS LIST</span>
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" >&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 
 
@@ -49,30 +66,21 @@
  <div class="accordion-item">
     <h2 class="accordion-header">
       <a href="selectbank.html" class="btn text-dark text-left" role="button" aria-pressed="true">
-        <h6>Select ATM</h6>
-
+        <b><h5>🏧 Select ATM</h5></b>
       </a>
     </h2>
-
 </div>
 
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-       Bank Of Baroda
-      </button>
+        🏧 Karnatak Bank
+        </button>
     </h2>
-
     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-
-
-        <a href="atm.html" class="btn btn-outline-success" role="button" aria-pressed="true"><h5>Mysuru Hebbal</h5></a>
-  
-      <a href="Atm2.html" class="btn btn-outline-success " role="button" aria-pressed="true"><h5>JP nagar mysuru</h5></a>
-  
-  
-  
-      </div>
+      <a href="atm.html" class="btn btn-outline-success" role="button" aria-pressed="true"><h5>🏧 Mysuru Hebbal</h5></a>
+      <a href="Atm2.html" class="btn btn-outline-success " role="button" aria-pressed="true"><h5>🏧 JP Nagar Mysuru</h5></a>
+    </div>
   </div>
 
 
@@ -80,24 +88,46 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-    Bank Of India
+         🏧 ICICI Bank
       </button>
     </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <a href="Atm3.html" class="btn btn-outline-success" role="button" aria-pressed="true"><h5>🏧 No 591,Abhishek Circle</h5></a>
+      <a href="Atm4.html" class="btn btn-outline-success " role="button" aria-pressed="true"><h5>🏧 Vijay Nagar Main Road</h5></a>
+    </div>
   </div>
 
 
  <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-       Corporation Bank
+        🏧 Corporation Bank
       </button>
     </h2>
       <a href="psearch.html" class="btn btn-outline-success text-left" role="button" aria-pressed="true"></a>
     </div>
   </div>
-
 </div>
 </div>
 
+<div class="image-slider">
+						
+  <ul class="rslides" id="slider1">
+            <li><img src="img/coin.jpg" alt=""></li>
+              <li><img src="img/acount.jpg" alt=""></li>
+              <li><img src="img/reg.jpg" alt=""></li>
+            </ul>
+
+</div>
+
+<div class="clear"> </div>
+<div class="content-grids">
+<div class="wrap">
+<div class="section group">
+    
+  
+
+</div>
+</div>
   </body>
 </html>
