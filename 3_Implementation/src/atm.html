@@ -16,7 +16,7 @@
             <input type="button" value="withdraw" onclick="withdraw()" >
             <input type="button" value="Credit" onclick="credit()" >
             <input type="button" value="Mini-st." onclick="minist()" >
-            <input type="button" value="Exit" onclick="exit()">
+            <a href ="selectbank.html"><input type="button" value="Exit" onclick="check(this.form)"></a>
             
             
     </div>
@@ -239,14 +239,7 @@ document.getElementById('msg2').innerHTML="";
     }
     
 };
-function exit(){
-    document.getElementById('selectbank.html').innerHTML="Enter your Atm No.";
-    document.getElementById('btnproced').setAttribute("onclick","cardcheck()");
-     document.getElementById('msg2').innerHTML="";
-    document.getElementById('menu').style.display="none";
-    document.getElementById('textview').value="";
-     document.getElementById('textview').style.display="block";
-}    
+ 
     </script>
  </aside>
 </body>
