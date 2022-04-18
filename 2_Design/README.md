@@ -1,6 +1,7 @@
 # Design
 
-## Structural
+![detail](https://user-images.githubusercontent.com/98829965/163783706-fe4257a4-caba-4b45-ac87-9bcd0619e0cc.jpg)
+
 
 ![ATM LOGIN](https://user-images.githubusercontent.com/98829965/157096058-641d2291-f410-4f57-910f-e0432ae06f8e.png)
 
