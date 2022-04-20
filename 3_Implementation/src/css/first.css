@@ -28,7 +28,7 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  padding: 14px 20px;
+  padding: 8px 20px;
   background-color: #1a543f;
 }
 
@@ -36,6 +36,7 @@ button:hover {
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
+  padding: 8px 20px;
 }
 
 /* Add padding to container elements */
@@ -51,7 +52,7 @@ button:hover {
 }
 
 img.avatar {
-  width: 25%;
+  width: 20%;
   border-radius: 150%;
 }
 
