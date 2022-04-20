@@ -19,10 +19,8 @@
                     window.open('patienthome.html')
                 }
                 else {
-
-                    alert("Error. Please enter correct Username")
-
-                }
+                        alert("Error. Please enter correct Username")
+                     }
             }
 
 
