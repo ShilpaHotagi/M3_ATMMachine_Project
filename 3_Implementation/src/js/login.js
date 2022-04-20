@@ -2,7 +2,7 @@ function check(form) {
     if(form.usrname.value == "Admin" && form.psw.value == "Admin123")
      {
         alert('Successfully Login');
-        window.open("adminview.html")
+        window.open("admin.html")
     }
     else if(form.usrname.value == "Shilpa" && form.psw.value == "Shilpa123")   
      {
