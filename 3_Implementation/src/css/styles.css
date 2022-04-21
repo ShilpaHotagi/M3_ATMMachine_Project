@@ -236,6 +236,16 @@ tr:nth-child(even) {
   background-color:lightseagreen; 
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left:1.7%;
+	min-width: 50%;
+	min-height: 20%;
+  }
+
 .panel {
   padding: 0 18px;
   display: none;

@@ -174,12 +174,23 @@ text-decoration: none;
     background-color: rgb(215, 218, 215);
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left:1.7%;
+	min-width: 50%;
+	min-height: 20%;
+  }
+
 .footer {
    position:relative;
    left: 0;
    bottom: 0;
-   width: 100%;
-   background-color: #0C0300;
+   width: 40%;
+   left: 1.7%;
+   background-color: #e6e6e6;
    color: white;
    text-align: center;
 }
